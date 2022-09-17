@@ -10,7 +10,7 @@ async function main() {
 	// Deploy ERC20
 	const erc20name = "LiquidToken";
 	const erc20symbol = "LT";
-	const totalSupply = 1000;
+	const totalSupply = 100;
 	const LNT20 = await ethers.getContractFactory("LNT20");
 	const lnt20 = await LNT20.deploy(erc20name, erc20symbol, totalSupply);
 	

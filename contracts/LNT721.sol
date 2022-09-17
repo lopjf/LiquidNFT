@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-// test
 
 pragma solidity 0.8.17;
 

@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/loris/Documents/hackathons/ETHglobal/LiquidNFT/contracts/LNT20.sol": {
-      "lastModificationDate": 1663408186243,
-      "contentHash": "61531d406011d43bdcf7a2ab39cde8fa",
+      "lastModificationDate": 1663410673983,
+      "contentHash": "f80f3fa282635a292c59036af6fb010b",
       "sourceName": "contracts/LNT20.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -224,8 +224,8 @@
       ]
     },
     "/home/loris/Documents/hackathons/ETHglobal/LiquidNFT/contracts/Vault.sol": {
-      "lastModificationDate": 1663408183687,
-      "contentHash": "3f96959c302a61adbefb68a9e059d001",
+      "lastModificationDate": 1663410679951,
+      "contentHash": "fe069107ba5bf54eb04e189df756c1ed",
       "sourceName": "contracts/Vault.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -263,8 +263,8 @@
       ]
     },
     "/home/loris/Documents/hackathons/ETHglobal/LiquidNFT/contracts/LNT721.sol": {
-      "lastModificationDate": 1663408185183,
-      "contentHash": "5a1b67702007113bf7be994885eb9fd3",
+      "lastModificationDate": 1663410676807,
+      "contentHash": "c9f1c8036cead612fd86c259e7ba7626",
       "sourceName": "contracts/LNT721.sol",
       "solcConfig": {
         "version": "0.8.17",
