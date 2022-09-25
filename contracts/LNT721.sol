@@ -18,7 +18,7 @@ contract LNT721 is ERC721, ERC721URIStorage, Ownable {
     string private _baseTokenURI;
 	uint public totalSupply;
 
-    constructor(IERC20 _erc20Token, string memory _name, string memory _symbol, string memory baseTokenURI) ERC721(_name, _symbol) {
+    constructor(IERC20 _erc20Token, string memory _name, string memory _symbol, string memory baseTokenURI, address _owner) ERC721(_name, _symbol) Ownable(_owner) {
         erc20Token = _erc20Token;
         _baseTokenURI = baseTokenURI;
 		totalSupply = erc20Token.totalSupply() / 1e18;

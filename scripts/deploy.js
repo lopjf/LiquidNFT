@@ -7,29 +7,12 @@
 const hre = require("hardhat");
 
 async function main() {
-	// Deploy ERC20
-	const erc20name = "LiquidToken";
-	const erc20symbol = "LT";
-	const totalSupply = 100;
-	const LNT20 = await ethers.getContractFactory("LNT20");
-	const lnt20 = await LNT20.deploy(erc20name, erc20symbol, totalSupply);
-	
-	// Deploy ERC721
-	const erc721name = "LiquidNFT";
-	const erc721symbol = "LNFT";
-	const baseURI = "ipfs://bafybeibnbtud2jvdz7dcxcig7p3nextucuheslggzhn6oiq7z7voqhbpge/";
-	const LNT721 = await ethers.getContractFactory("LNT721");
-	const lnt721 = await LNT721.deploy(lnt20.address, erc721name, erc721symbol, baseURI);
-
-	// Deploy Vault
-	const LiquidVault = await ethers.getContractFactory("LiquidVault");
-	const vault = await LiquidVault.deploy(lnt20.address, lnt721.address);
+	// Deploy Deployer
+	const LiquidNFT_deploy = await ethers.getContractFactory("LiquidNFT_deploy");
+	const liquidNFT_deploy = await LiquidNFT_deploy.deploy();
 
 	console.log("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	console.log("Contracts successfully deployed!\n\nerc20 contract:   ", lnt20.address);
-	console.log("erc721 contract:  ", lnt721.address);
-	console.log("vault contract:   ", vault.address);
-	console.log("\n");
+	console.log("Contracts successfully deployed!");
 }
 
 // We recommend this pattern to be able to use async/await everywhere
